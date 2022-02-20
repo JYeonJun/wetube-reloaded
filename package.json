@@ -7,7 +7,7 @@
     "url": "git+https://github.com/JYeonJun/wetube-reloaded.git"
   },
   "scripts": {
-    "win": "node index.js"
+    "dev": "nodemon --exec babel-node index.js"
   },
   "author": "Jung Yeon Jun",
   "license": "MIT",
@@ -20,6 +20,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",
-    "@babel/preset-env": "^7.16.11"
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "nodemon": "^2.0.15"
   }
 }
