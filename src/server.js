@@ -6,7 +6,8 @@ const PORT = 4000;
 const app = express();
 
 // get request
-app.get("/", () => console.log("Somebody is trying to go home."));
+app.get("/", (req, res) => res.send("<h1>I still love you<h1>"));
+app.get("/login", (req, res) => res.send("Login here."));
 
 // 외부 접속 listen
 const handleListening = () =>
