@@ -12,9 +12,10 @@ const app = express();
 // morgan으로 middleware 생성
 const logger = morgan("dev");
 
+app.set("view engine", "pug");
+
 // get request
 app.use(logger);
-
 app.use("/", globalRouter);
 app.use("/users", userRouter);
 app.use("/videos", videoRouter);
